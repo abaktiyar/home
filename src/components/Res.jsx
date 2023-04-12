@@ -11,7 +11,8 @@ const cardList = [
     },
     {
         name: 'To-do List App',
-        content: 'To-do list application using React.js and Bootstrap'
+        content: 'To-do list application using React.js and Bootstrap',
+        linc: 'https://github.com/assylzhanb/todo-list'
     },
     {
         name: 'APIAI Telegram-bot',
@@ -76,6 +77,13 @@ const Carrosel = ({ children }) => {
     );
 };
 
+
+const Someshit = () => {
+    return (
+        <>
+        </>
+    )
+}
 const Res = () => (
     <div className="app pt-48 pb-48">
         <Carrosel>
