@@ -1,6 +1,7 @@
 import SocialMediaIcons from "./SocialMediaIcons";
 import useMediaQuery from "../hooks/useMediaQuery";
 import { motion } from "framer-motion";
+import { TypeAnimation } from 'react-type-animation';
 import AnchorLink from "react-anchor-link-smooth-scroll";
 
 const Landing = ({ setSelectedPage }) => {
@@ -8,26 +9,23 @@ const Landing = ({ setSelectedPage }) => {
   return (
     <section
       id="home"
-      className="md:flex md:justify-between md:items-center gap-16 md:h-full py-10"
+      className="md:flex md:justify-between md:items-center gap-16 md:h-full py-5"
     >
       {/* IMAGE SECTION */}
       <div className="basis-3/5 z-10 mt-16 md:mt-32 flex justify-center md:order-2">
         {isAboveLarge ? (
-          <div
-            className="relative z-0 ml-20 before:absolute before:-top-20 before:-left-20 before:rounded-t-[400px]
-            before:w-full before:max-w-[400px] md:before:max-w-[600px] before:h-full before:border-2 before:border-yellow before:z-[-1]"
-          >
-            <img
-              alt="profile"
-              className="hover:filter hover:saturate-200 transition duration-500 z-10 w-full max-w-[400px] md:max-w-[600px]"
-              // take src photo from assets folder and put it here
-              src="../assets/profile-image.png"
-            />
-          </div>
+
+          <img
+            alt="profile"
+            className="hover:filter hover:saturate-200 transition duration-500 z-10 w-full max-w-[400px] md:max-w-[600px] rounded-lg"
+            // take src photo from assets folder and put it here
+            src="../assets/profile-image.png"
+          />
+
         ) : (
           <img
             alt="profile"
-            className="z-10 w-full max-w-[400px] md:max-w-[600px]"
+            className="z-10 w-full max-w-[400px] md:max-w-[600px] rounded-lg"
             src="assets/profile-image.png"
           />
         )}
@@ -48,13 +46,28 @@ const Landing = ({ setSelectedPage }) => {
             visible: { opacity: 1, x: 0 },
           }}
         >
-          <p className="text-6xl font-playfair p-3 z-10 text-center md:text-start">
-            Assylzhan Baktiyar
-            
-          </p>
+          <div className="p-5 text-black font-semibold">
+            <TypeAnimation
+              sequence={[
+                'I am Baktiyar Assylzhan',
+                1000,
+                'I am a Software Engineer',
+                1000,
+                'I am an R&D intern',
+                1000,
+                'I am a full-stack developer',
+                1000
+              ]}
+              wrapper="span"
+              speed={50}
+              style={{ fontSize: '2em', display: 'inline-block' }}
+              repeat={Infinity}
 
-          <p className="mt-10 mb-7 text-sm text-center p-5 md:text-start">
-          Currently studying for a bachelor's degree in Computer Science and Engineering at UNIST, South Korea, possessing self-assurance and a strong work ethic. 
+            />
+          </div>
+
+          <p className="mt-10 mb-7 text-gray-400 text-center p-5 md:text-start">
+            Currently studying for a bachelor's degree in Computer Science and Engineering at UNIST, South Korea, possessing self-assurance and a strong work ethic.
           </p>
         </motion.div>
 
@@ -70,25 +83,24 @@ const Landing = ({ setSelectedPage }) => {
             visible: { opacity: 1, x: 0 },
           }}
         >
+          <a
+            className="bg-red-500 text-white rounded-lg py-3 m-2 px-7 font-semibold
+              hover:bg-red-600 hover:text-white transition duration-500"
+            href="https://drive.google.com/file/d/1mwDVaf_k6J8Ubj-lT9hoX1DBGE_D8Xjl/view?usp=sharing"
+          >
+            Resume
+          </a>
           <AnchorLink
-            className="bg-gradient-rainblue text-deep-blue rounded-sm py-3 m-2 px-7 font-semibold
-              hover:bg-blue hover:text-white transition duration-500"
+            className="rounded-r-sm  py-0.5 pr-0.5 pl-0.5 m-2"
             onClick={() => setSelectedPage("contact")}
             href="#contact"
           >
-            Contact Me
-          </AnchorLink>
-          <AnchorLink
-            className="rounded-r-sm bg-gradient-rainvio py-0.5 pr-0.5 pl-0.5 m-2"
-            onClick={() => setSelectedPage("contact")}
-            href="#contact"
-          >
-            <div className="bg-deep-blue hover:text-red transition duration-500 w-full h-full flex items-center justify-center px-10 font-playfair">
-              Let's talk.
+            <div className="bg-gray-200 hover:text-red-500 rounded-lg transition duration-500 w-full h-full flex items-center justify-center px-10 font-playfair">
+              Contact Me
             </div>
           </AnchorLink>
         </motion.div>
-        
+
         <motion.div
           className="flex mt-5 justify-center md:justify-start"
           initial="hidden"
@@ -105,7 +117,7 @@ const Landing = ({ setSelectedPage }) => {
       </div>
     </section>
   );
-  
+
 };
 
 export default Landing;

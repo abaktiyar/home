@@ -22,15 +22,15 @@ const Link = ({ page, selectedPage, setSelectedPage }) => {
 const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
     const [isMenuToggled, setIsMenuToggled] = useState(false);
     const isAboveSmallScreen = useMediaQuery('(min-width: 768px)');
-    const navbarBackground = isTopOfPage ? 'shadow-none' : 'bg-deep-blue shadow-lg';
+    const navbarBackground = isTopOfPage ? 'shadow-none' : 'bg-black shadow-lg text-white';
     return (
-        <nav className={`${navbarBackground} transition-all ease-out duration-200 z-40 w-full fixed top-0 py-6`}>
-            <div className="flex items-center justify-between mx-auto w-5/6">
+        <nav className={`${navbarBackground} transition-all duration-200 z-40 w-full fixed top-0 py-6`}>
+            <div className="flex items-center justify-between mx-auto px-16">
                 <h4
                     className="font-playfair text-3xl font-bold"
                     onClick={() => setSelectedPage('home')}
                 >
-                    Portfolio
+                    Baktiyar Assylzhan
                 </h4>
                 {/* Navbar for Desktop */}
                 {isAboveSmallScreen ? (
@@ -41,22 +41,17 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
                             setSelectedPage={setSelectedPage}
                         />
                         <Link
+                            page="About"
+                            selectedPage={selectedPage}
+                            setSelectedPage={setSelectedPage}
+                        />
+                        <Link
                             page="Skills"
                             selectedPage={selectedPage}
                             setSelectedPage={setSelectedPage}
                         />
                         <Link
                             page="Projects"
-                            selectedPage={selectedPage}
-                            setSelectedPage={setSelectedPage}
-                        />
-                        {/* <Link
-                            page="Testimonials"
-                            selectedPage={selectedPage}
-                            setSelectedPage={setSelectedPage}
-                         /> */}
-                        <Link
-                            page="Extracurriculars"
                             selectedPage={selectedPage}
                             setSelectedPage={setSelectedPage}
                         />

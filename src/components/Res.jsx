@@ -78,12 +78,6 @@ const Carrosel = ({ children }) => {
 };
 
 
-const Someshit = () => {
-    return (
-        <>
-        </>
-    )
-}
 const Res = () => (
     <div className="app pt-48 pb-48">
         <Carrosel>
