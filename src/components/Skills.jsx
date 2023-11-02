@@ -35,7 +35,7 @@ const Skills = ({ setSelectedPage }) => {
                     {isAboveLarge ? (
                         <div
                             className="relative z-0 ml-20 before:absolute before:-top-10 before:-left-10
-                        before:w-full before:h-full before:border-2 before:border-blue before:z-[-1]"
+                        before:w-full before:h-full before:border-2 before:border-red-500 before:z-[-1]"
                         >
                             <img
                                 alt="skills"

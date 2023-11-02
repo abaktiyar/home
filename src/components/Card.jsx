@@ -1,11 +1,7 @@
-const Card = ({ title, content, linc }) => (
-
-    // make the card clickable
-    // and open a new tab when clicked where linc is the link
-    // also add a hover effect
+const Card = ({ title, content, linc, photo }) => (
 
 
-    <div className="cartao"
+    <div className={`cartao border-gray-200 border-2`}
         onClick={() => {
             window.open(linc)
         }}

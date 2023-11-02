@@ -11,6 +11,7 @@ const SocialMediaIcons = () => {
                 <img
                     alt="LinkedIn"
                     src="../assets/linkedin.png"
+                    style={{ filter: 'grayscale(100%)' }}
                 />
             </a>
             <a

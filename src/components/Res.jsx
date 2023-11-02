@@ -5,6 +5,16 @@ import Card from "./Card";
 
 const cardList = [
     {
+        name: "Course Reviewer",
+        content: "A web application that allows students to review courses and professors in UNIST",
+        linc: "https://github.com/assylzhanb/course-reviewer"
+    },
+    {
+        name: "Image Generator",
+        content: "A full-stack web application that generates images based on OpenAI's DALL-E model",
+        linc: "https://github.com/assylzhanb/dalle-copy"
+    },
+    {
         name: 'Portfolio',
         content: 'This webpage based on React.js and Tailwind for styling',
         linc: 'https://github.com/assylzhanb/portfolio'
@@ -18,15 +28,6 @@ const cardList = [
         name: 'APIAI Telegram-bot',
         content: 'Telegram bot with AI extension'
     },
-    {
-        name: 'SRTCNN',
-        content: 'Updated Super Resolution model based on SRCNN with new transpose layer'
-
-    },
-    {
-        name: 'Maze PathFinder',
-        content: 'In Process...'
-    }
 ]
 
 
@@ -79,18 +80,20 @@ const Carrosel = ({ children }) => {
 
 
 const Res = () => (
-    <div className="app pt-48 pb-48">
-        <Carrosel>
-            {cardList.map((_, i) => (
-                <Card
-                    key={i}
-                    linc={cardList[i].linc}
-                    title={cardList[i].name}
-                    content={cardList[i].content}
-                />
-            ))}
-        </Carrosel>
-    </div>
+    <section id="projects">
+        <div className="app pt-48 pb-48 ">
+            <Carrosel>
+                {cardList.map((_, i) => (
+                    <Card
+                        key={i}
+                        linc={cardList[i].linc}
+                        title={cardList[i].name}
+                        content={cardList[i].content}
+                    />
+                ))}
+            </Carrosel>
+        </div>
+    </section>
 );
 
 export default Res;
