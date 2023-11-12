@@ -17,7 +17,7 @@ const Landing = ({ setSelectedPage }) => {
 
           <img
             alt="profile"
-            className="hover:filter hover:saturate-200 transition duration-500 z-10 w-full max-w-[400px] md:max-w-[600px] rounded-lg"
+            className="hover:filter hover:saturate-150 transition duration-500 z-10 w-full max-w-[400px] md:max-w-[600px] rounded-lg"
             // take src photo from assets folder and put it here
             src="../assets/profile-image.png"
           />
@@ -95,7 +95,7 @@ const Landing = ({ setSelectedPage }) => {
             onClick={() => setSelectedPage("contact")}
             href="#contact"
           >
-            <div className="bg-gray-200 hover:text-red-500 rounded-lg transition duration-500 w-full h-full flex items-center justify-center px-10 font-playfair">
+            <div className="bg-gray-200 hover:text-red-500 rounded-lg transition duration-500 w-full h-full flex items-center justify-center px-10 font-semibold">
               Contact Me
             </div>
           </AnchorLink>

@@ -55,6 +55,30 @@ const AboutMe = ({ setSelectedPage }) => {
                             </motion.div>
                         </div>
                     </div>
+                    <div className="mt-28 hover:scale-110 ease-in transition-all transform-gpu">
+                        <motion.div
+                            initial="hidden"
+                            whileInView="visible"
+                            viewport={{ once: true, amount: 0.5 }}
+                            transition={{ duration: 1, delay: 2 }}
+                            variants={{
+                                hidden: { opacity: 0, x: 0 },
+                                visible: { opacity: 1, x: 0 },
+                            }}
+                        >
+
+
+                            <a
+                                className="bg-red-500 text-white rounded-lg py-3 m-2 px-7 font-semibold
+              hover:bg-red-600 hover:text-white transition-all duration-300"
+                                href="https://drive.google.com/file/d/1mwDVaf_k6J8Ubj-lT9hoX1DBGE_D8Xjl/view?usp=sharing"
+                            >
+                                Resume
+                            </a>
+
+                        </motion.div>
+
+                    </div>
                 </div>
             </div>
         </section>

@@ -11,7 +11,7 @@ const SocialMediaIcons = () => {
                 <img
                     alt="LinkedIn"
                     src="../assets/linkedin.png"
-                    style={{ filter: 'grayscale(100%)' }}
+                    width="30px"
                 />
             </a>
             <a
@@ -23,6 +23,7 @@ const SocialMediaIcons = () => {
                 <img
                     alt="Github"
                     src="../assets/github.png"
+                    width="25px"
                 />
             </a>
             <a
@@ -34,6 +35,7 @@ const SocialMediaIcons = () => {
                 <img
                     alt="Instagram"
                     src="../assets/instagram.png"
+                    width="25px"
                 />
             </a>
             <a
@@ -45,6 +47,7 @@ const SocialMediaIcons = () => {
                 <img
                     alt="Facebook"
                     src="../assets/facebook.png"
+                    width="25px"
                 />
             </a>
 
@@ -58,6 +61,7 @@ const SocialMediaIcons = () => {
                 <img
                     alt="YouTube"
                     src="../assets/youtube.png"
+                    width="25px"
                 />
             </a>
 

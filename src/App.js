@@ -6,7 +6,6 @@ import DotGroup from './components/DotGroup';
 import Landing from './components/Landing';
 import LineGradient from './components/LineGradient';
 import Skills from './components/Skills';
-// import Projects from './components/Projects';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 
@@ -95,7 +94,7 @@ function App() {
       </div> */}
       <LineGradient />
       {/* CARDS COMPONENT */}
-      <div className="flex justify-center mx-auto md:h-full">
+      <div className="flex justify-center md:h-full">
         <motion.div
           margin="0 0 -200px 0"
           amount="all"
@@ -105,9 +104,9 @@ function App() {
         </motion.div>
       </div>
 
-      <LineGradient />
+      {/* <LineGradient /> */}
 
-      <div className="w-5/6 mx-auto md:h-full">
+      <div className="w-full mx-auto md:h-full bg-black">
         <motion.div
           margin="0 0 -200px 0"
           amount="all"

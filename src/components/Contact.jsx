@@ -1,8 +1,10 @@
 import LineGradient from "../components/LineGradient";
 import { useForm } from "react-hook-form";
 import { motion } from "framer-motion";
+import useMediaQuery from '../hooks/useMediaQuery';
 
 const Contact = () => {
+  const isAboveSmallScreen = useMediaQuery('(min-width: 768px)');
   const {
     register,
     trigger,
@@ -18,7 +20,7 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="contact py-48">
+    <section id="contact" className="contact py-48 w-5/6 md: m-auto">
       {/* HEADINGS */}
       <motion.div
         initial="hidden"
@@ -33,7 +35,7 @@ const Contact = () => {
       >
         <div>
           <p className="font-semibold text-4xl">
-            <span className="text-yellow">CONTACT ME</span>
+            <span className="text-red-500">CONTACT ME</span>
           </p>
           <div className="flex md:justify-end my-5">
             <LineGradient width="w-1/2" />
@@ -43,7 +45,7 @@ const Contact = () => {
 
       {/* FORM & IMAGE */}
       <div className="md:flex md:justify-between gap-16">
-        <motion.div
+        {isAboveSmallScreen ? (<motion.div
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.5 }}
@@ -52,20 +54,20 @@ const Contact = () => {
             hidden: { opacity: 0, y: 50 },
             visible: { opacity: 1, y: 0 },
           }}
-          className="basis-1/2 flex justify-center"
+          className="basis-1/2 flex justify-center "
         >
           {/* make this image smaller */}
           <img width={300} height={400}
             className="rounded-lg"
-
             src="../assets/contact-image.jpeg" alt="contact" />
-        </motion.div>
+        </motion.div>) : null}
+
 
         <motion.div
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.5 }}
-          transition={{ delay: 0.2, duration: 0.5 }}
+          transition={{ delay: 0.1, duration: 0.5 }}
           variants={{
             hidden: { opacity: 0, y: 50 },
             visible: { opacity: 1, y: 0 },
@@ -75,11 +77,11 @@ const Contact = () => {
           <form
             target="_blank"
             onSubmit={onSubmit}
-            action="https://formsubmit.co/e8a5bdfa807605332f809e5656e27c6e"
+            action="https://formsubmit.co/assylzhan27@gmail.com"
             method="POST"
           >
             <input
-              className="w-full bg-yellow rounded-lg font-semibold placeholder-opaque-black p-3"
+              className="w-full rounded-md font-semibold placeholder-opaque-black p-3 outline-none"
               type="text"
               placeholder="NAME"
               {...register("name", {
@@ -95,7 +97,7 @@ const Contact = () => {
             )}
 
             <input
-              className="w-full bg-yellow rounded-lg font-semibold placeholder-opaque-black p-3 mt-5"
+              className="w-full  rounded-md font-semibold placeholder-opaque-black p-3 mt-5 outline-none"
               type="text"
               placeholder="EMAIL"
               {...register("email", {
@@ -111,7 +113,7 @@ const Contact = () => {
             )}
 
             <textarea
-              className="w-full bg-yellow rounded-lg font-semibold placeholder-opaque-black p-3 mt-5"
+              className="w-full rounded-md font-semibold placeholder-opaque-black p-3 mt-5 outline-none"
               name="message"
               placeholder="MESSAGE"
               rows="4"
@@ -131,7 +133,7 @@ const Contact = () => {
             )}
 
             <button
-              className="p-5 bg-red font-semibold rounded-lg text-deep-blue mt-5 hover:bg-yellow hover:text-white transition duration-500"
+              className="p-5 bg-gray-300 font-semibold rounded-lg text-deep-blue mt-5 hover:bg-red-500 hover:text-white transition duration-500"
               type="submit"
             >
               SEND ME A MESSAGE
