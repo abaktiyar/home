@@ -27,6 +27,6 @@ jobs:
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@releases/v3
         with:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.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 }}
           BRANCH: gh-pages # Change this to your GitHub Pages branch
           FOLDER: build # Change this to the build folder of your React project
