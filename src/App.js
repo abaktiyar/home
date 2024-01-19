@@ -33,7 +33,6 @@ function App() {
   return (
     // NAVBAR COMPONENT
     <div className="app">
-      <div>CHANGE</div>
       <Navbar
         isTopOfPage={isTopOfPage}
         selectedPage={selectedPage}
