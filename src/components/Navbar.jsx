@@ -91,9 +91,9 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
                             className='rounded-full bg-red p-2'
                             onClick={() => setIsMenuToggled(!isMenuToggled)}
                         >
-                            <img alt="menu-icon"
+                            <img alt="menu-open-icon"
                                 className={`${isTopOfPage ? 'brightness-0' : 'brightness-100'}`}
-                                src="../assets/menu-icon.svg" />
+                                src={require("../assets/menu-icon.svg").default} />
                         </button>
 
                         {isMenuToggled && (
@@ -149,9 +149,9 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
                                     className='absolute right-16 top-10 rounded-full bg-red p-2'
                                     onClick={() => setIsMenuToggled(!isMenuToggled)}
                                 >
-                                    <img alt="menu-icon"
+                                    <img alt="menu-close-icon"
 
-                                        src="../assets/close-icon.svg" />
+                                        src={require("../assets/close-icon.svg").default} />
                                 </button>
 
 

@@ -18,15 +18,14 @@ const Landing = ({ setSelectedPage }) => {
           <img
             alt="profile"
             className="hover:filter hover:saturate-150 transition duration-500 z-10 w-full max-w-[400px] md:max-w-[600px] rounded-lg"
-            // take src photo from assets folder and put it here
-            src="../assets/profile-image.png"
+            src={require("../assets/profile-image.png")}
           />
 
         ) : (
           <img
             alt="profile"
             className="z-10 w-full max-w-[400px] md:max-w-[600px] rounded-lg"
-            src="assets/profile-image.png"
+            src={require("../assets/profile-image.png")}
           />
         )}
       </div>

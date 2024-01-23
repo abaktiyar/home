@@ -10,7 +10,7 @@ const SocialMediaIcons = () => {
                 target="_blank" rel="noreferrer">
                 <img
                     alt="LinkedIn"
-                    src="../assets/linkedin.png"
+                    src={require("../assets/linkedin.png")}
                     width="30px"
                 />
             </a>
@@ -22,7 +22,7 @@ const SocialMediaIcons = () => {
                 target="_blank" rel="noreferrer">
                 <img
                     alt="Github"
-                    src="../assets/github.png"
+                    src={require("../assets/github.png")}
                     width="25px"
                 />
             </a>
@@ -34,7 +34,7 @@ const SocialMediaIcons = () => {
                 target="_blank" rel="noreferrer">
                 <img
                     alt="Instagram"
-                    src="../assets/instagram.png"
+                    src={require("../assets/instagram.png")}
                     width="25px"
                 />
             </a>
@@ -46,7 +46,7 @@ const SocialMediaIcons = () => {
                 target="_blank" rel="noreferrer">
                 <img
                     alt="Facebook"
-                    src="../assets/facebook.png"
+                    src={require("../assets/facebook.png")}
                     width="25px"
                 />
             </a>
@@ -60,7 +60,7 @@ const SocialMediaIcons = () => {
                 target="_blank" rel="noreferrer">
                 <img
                     alt="YouTube"
-                    src="../assets/youtube.png"
+                    src={require("../assets/youtube.png")}
                     width="25px"
                 />
             </a>

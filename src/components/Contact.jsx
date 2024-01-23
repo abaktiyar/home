@@ -59,7 +59,7 @@ const Contact = () => {
           {/* make this image smaller */}
           <img width={300} height={400}
             className="rounded-lg"
-            src="../assets/contact-image.jpeg" alt="contact" />
+            src={require("../assets/contact-image.jpeg")} alt="contact" />
         </motion.div>) : null}
 
 

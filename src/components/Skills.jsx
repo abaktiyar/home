@@ -40,11 +40,11 @@ const Skills = ({ setSelectedPage }) => {
                             <img
                                 alt="skills"
                                 className="z-10 saturate-100"
-                                src="assets/skills-image.png"
+                                src={require("../assets/skills-image.png")}
                             />
                         </div>
                     ) : (
-                        <img alt="skills" className="z-10" src="assets/skills-image.png" />
+                        <img alt="skills" className="z-10" src={require("../assets/skills-image.png")} />
                     )}
                 </div>
             </div>
