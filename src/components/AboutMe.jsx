@@ -1,5 +1,6 @@
 import React from 'react'
 import { motion } from "framer-motion";
+import Resume from "./Resume";
 
 const AboutMe = ({ setSelectedPage }) => {
     return (
@@ -68,13 +69,7 @@ const AboutMe = ({ setSelectedPage }) => {
                         >
 
 
-                            <a
-                                className="bg-red-500 text-white rounded-lg py-3 m-2 px-7 font-semibold
-              hover:bg-red-600 hover:text-white transition-all duration-300"
-                                href="https://drive.google.com/file/d/1mwDVaf_k6J8Ubj-lT9hoX1DBGE_D8Xjl/view?usp=sharing"
-                            >
-                                Resume
-                            </a>
+                            <Resume />
 
                         </motion.div>
 

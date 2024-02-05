@@ -3,6 +3,7 @@ import useMediaQuery from "../hooks/useMediaQuery";
 import { motion } from "framer-motion";
 import { TypeAnimation } from 'react-type-animation';
 import AnchorLink from "react-anchor-link-smooth-scroll";
+import Resume from "./Resume";
 
 const Landing = ({ setSelectedPage }) => {
   const isAboveLarge = useMediaQuery("(min-width: 1060px)");
@@ -82,13 +83,7 @@ const Landing = ({ setSelectedPage }) => {
             visible: { opacity: 1, x: 0 },
           }}
         >
-          <a
-            className="bg-red-500 text-white rounded-lg py-3 m-2 px-7 font-semibold
-              hover:bg-red-600 hover:text-white transition duration-500"
-            href="https://drive.google.com/file/d/1mwDVaf_k6J8Ubj-lT9hoX1DBGE_D8Xjl/view?usp=sharing"
-          >
-            Resume
-          </a>
+          <Resume />
           <AnchorLink
             className="rounded-r-sm  py-0.5 pr-0.5 pl-0.5 m-2"
             onClick={() => setSelectedPage("contact")}
