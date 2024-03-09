@@ -1,6 +1,6 @@
 import { React } from 'react';
 
-const link = "https://drive.google.com/file/d/194FSLw3tzM2h5sUFOFKh5w3sEH5covTY/view?usp=sharing"
+const link = "https://drive.google.com/file/d/1yZcJihxAH-DlChmD5N1Ju1TKKIt3ZZz5/view?usp=sharing"
 
 const Resume = () => {
     return <a
