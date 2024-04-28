@@ -1,21 +1,24 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
+import React from 'react'
+import ReactDOM from 'react-dom/client'
+import './index.css'
+import App from './App'
+import { BrowserRouter } from 'react-router-dom'
 
 
-let pageTitle = document.title;
+let pageTitle = document.title
 window.addEventListener('blur', () => {
   document.title = 'Come back here';
-});
+})
 window.addEventListener('focus', () => {
-  document.title = pageTitle;
-});
-const root = ReactDOM.createRoot(document.getElementById('root'));
+  document.title = pageTitle
+})
+const root = ReactDOM.createRoot(document.getElementById('root'))
 
 
 root.render(
-  <App />
+  <BrowserRouter>
+    <App />
+  </BrowserRouter>
 );
 
 

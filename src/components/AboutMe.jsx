@@ -1,6 +1,9 @@
 import React from 'react'
 import { motion } from "framer-motion";
 import Resume from "./Resume";
+import { TypeAnimation } from 'react-type-animation';
+
+const aboutMeText = "I'm deeply passionate about coding and committed to creating reliable software. My academic achievements and internships have reinforced my dedication to the art of software development. I take great satisfaction in crafting efficient, long-lasting code that not only meets functional needs but also endures."
 
 const AboutMe = ({ setSelectedPage }) => {
     return (
@@ -42,18 +45,17 @@ const AboutMe = ({ setSelectedPage }) => {
                             </motion.div>
                         </div>
                         <div>
-                            <motion.div
-                                initial="hidden"
-                                whileInView="visible"
-                                viewport={{ once: true, amount: 0.5 }}
-                                transition={{ duration: 1.5 }}
-                                variants={{
-                                    hidden: { opacity: 0, x: 100 },
-                                    visible: { opacity: 1, x: 0 },
-                                }}
-                            >
-                                <p>I'm deeply passionate about coding and committed to creating reliable software. My academic achievements and internships have reinforced my dedication to the art of software development. I take great satisfaction in crafting efficient, long-lasting code that not only meets functional needs but also endures. I'm prepared to launch a fulfilling career where my passion translates into innovative, dependable software solutions.</p>
-                            </motion.div>
+                            <TypeAnimation
+                                sequence={[
+                                    aboutMeText,
+                                    1000,
+                                ]}
+                                wrapper="span"
+                                speed={80}
+                                style={{ fontSize: `20px`, display: 'inline-block' }}
+                                repeat={Infinity}
+
+                            />
                         </div>
                     </div>
                     <div className="mt-28 hover:scale-110 ease-in transition-all transform-gpu">

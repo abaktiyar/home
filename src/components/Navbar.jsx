@@ -1,11 +1,23 @@
-import { useState } from 'react';
-import AnchorLink from 'react-anchor-link-smooth-scroll';
-import useMediaQuery from '../hooks/useMediaQuery';
-import { motion } from 'framer-motion';
-const Link = ({ page, selectedPage, setSelectedPage, isAboveSmallScreen, isTopOfPage }) => {
-    const lowerCasePage = page.toLowerCase();
-    // const defaultColor = (isAboveSmallScreen && !isTopOfPage) ? 'text-white' : 'text-black ';
-    const defaultSize = isAboveSmallScreen ? 'text-lg' : 'text-2xl hover:text-yellow';
+import { useState } from 'react'
+import AnchorLink from 'react-anchor-link-smooth-scroll'
+import useMediaQuery from '../hooks/useMediaQuery'
+import { motion } from 'framer-motion'
+import { Link } from 'react-router-dom'
+
+
+const SmoothLink = ({ page, selectedPage, setSelectedPage, isAboveSmallScreen, isTopOfPage }) => {
+    const defaultSize = isAboveSmallScreen ? 'text-lg' : 'text-2xl hover:text-yellow'
+    const lowerCasePage = page.toLowerCase()
+    if (lowerCasePage === "resume") return (
+        <Link to="/resume" className={`relative inline-block cursor-pointer ${selectedPage === lowerCasePage ? 'text-yellow' : ''}
+        transition duration-500 ${defaultSize} group`}>
+            <div className="max-w-md">
+                {page}
+                {isAboveSmallScreen && <span className={`absolute bottom-0 left-0 inline-block w-full h-0.5 ${isTopOfPage ? "bg-black" : "bg-white"} transform scale-x-0 origin-left transition-transform duration-300 group-hover:scale-x-100`}></span>}
+            </div>
+        </Link>
+    )
+    // const defaultColor = (isAboveSmallScreen && !isTopOfPage) ? 'text-white' : 'text-black '
 
     return (
         <AnchorLink
@@ -19,23 +31,19 @@ const Link = ({ page, selectedPage, setSelectedPage, isAboveSmallScreen, isTopOf
                 {isAboveSmallScreen && <span className={`absolute bottom-0 left-0 inline-block w-full h-0.5 ${isTopOfPage ? "bg-black" : "bg-white"} transform scale-x-0 origin-left transition-transform duration-300 group-hover:scale-x-100`}></span>}
             </div>
         </AnchorLink>
-    );
-
-
-
-
-};
+    )
+}
 
 
 // make a portfolio website using react
 // navbar component that takes selectedPage and setSelected Page as a prop and returns a navbar
 const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
-    const [isMenuToggled, setIsMenuToggled] = useState(false);
-    const isAboveSmallScreen = useMediaQuery('(min-width: 768px)');
-    const navbarBackground = isTopOfPage ? 'shadow-none' : 'bg-black shadow-lg text-white';
+    const [isMenuToggled, setIsMenuToggled] = useState(false)
+    const isAboveSmallScreen = useMediaQuery('(min-width: 768px)')
+    const navbarBackground = isTopOfPage ? 'shadow-none' : 'bg-black shadow-lg text-white'
     const handleLinkClick = (page) => {
-        setSelectedPage(page);
-        setIsMenuToggled(false);
+        setSelectedPage(page)
+        setIsMenuToggled(false)
     }
     return (
         <nav className={`${navbarBackground} transition-all duration-200 z-40 w-full fixed top-0 py-6`}>
@@ -49,35 +57,42 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
                 {/* Navbar for Desktop */}
                 {isAboveSmallScreen ? (
                     <div className="flex jutify-between gap-16 font-opensans text-sm font-semibold">
-                        <Link
+                        <SmoothLink
                             page="Home"
                             selectedPage={selectedPage}
                             setSelectedPage={setSelectedPage}
                             isAboveSmallScreen={isAboveSmallScreen}
                             isTopOfPage={isTopOfPage}
                         />
-                        <Link
+                        <SmoothLink
+                            page="Resume"
+                            selectedPage={selectedPage}
+                            setSelectedPage={setSelectedPage}
+                            isAboveSmallScreen={isAboveSmallScreen}
+                            isTopOfPage={isTopOfPage}
+                        />
+                        <SmoothLink
                             page="About"
                             selectedPage={selectedPage}
                             setSelectedPage={setSelectedPage}
                             isAboveSmallScreen={isAboveSmallScreen}
                             isTopOfPage={isTopOfPage}
                         />
-                        <Link
+                        <SmoothLink
                             page="Skills"
                             selectedPage={selectedPage}
                             setSelectedPage={setSelectedPage}
                             isAboveSmallScreen={isAboveSmallScreen}
                             isTopOfPage={isTopOfPage}
                         />
-                        <Link
+                        <SmoothLink
                             page="Projects"
                             selectedPage={selectedPage}
                             setSelectedPage={setSelectedPage}
                             isAboveSmallScreen={isAboveSmallScreen}
                             isTopOfPage={isTopOfPage}
                         />
-                        <Link
+                        <SmoothLink
                             page="Contact"
                             selectedPage={selectedPage}
                             setSelectedPage={setSelectedPage}
@@ -108,35 +123,35 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
                                     className='flex flex-col gap-4 mx-auto mt-50 justify-center h-full bg-black'
                                 >
                                     {/* Your links and other content */}
-                                    <Link
+                                    <SmoothLink
                                         page="Home"
                                         selectedPage={selectedPage}
                                         setSelectedPage={() => handleLinkClick('home')}
                                         isAboveSmallScreen={isAboveSmallScreen}
                                         isTopOfPage={isTopOfPage}
                                     />
-                                    <Link
+                                    <SmoothLink
                                         page="About"
                                         selectedPage={selectedPage}
                                         setSelectedPage={() => handleLinkClick('about')}
                                         isAboveSmallScreen={isAboveSmallScreen}
                                         isTopOfPage={isTopOfPage}
                                     />
-                                    <Link
+                                    <SmoothLink
                                         page="Skills"
                                         selectedPage={selectedPage}
                                         setSelectedPage={() => handleLinkClick('skills')}
                                         isAboveSmallScreen={isAboveSmallScreen}
                                         isTopOfPage={isTopOfPage}
                                     />
-                                    <Link
+                                    <SmoothLink
                                         page="Projects"
                                         selectedPage={selectedPage}
                                         setSelectedPage={() => handleLinkClick('projects')}
                                         isAboveSmallScreen={isAboveSmallScreen}
                                         isTopOfPage={isTopOfPage}
                                     />
-                                    <Link
+                                    <SmoothLink
                                         page="Contact"
                                         selectedPage={selectedPage}
                                         setSelectedPage={() => handleLinkClick('contact')}

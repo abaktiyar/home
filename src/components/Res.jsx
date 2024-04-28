@@ -5,6 +5,12 @@ import Card from "./Card";
 
 const cardList = [
     {
+        name: "Elastic Network Models",
+        content: "A python module for evaluating the performance of Elastic Network Models",
+        linc: "https://github.com/almacho04/ENM"
+    },
+
+    {
         name: "Course Reviewer",
         content: "A web application that allows students to review courses and professors in UNIST",
         linc: "https://github.com/assylzhanb/course-reviewer"
