@@ -1,9 +1,9 @@
 import LineGradient from "../components/LineGradient";
-import useMediaQuery from "../hooks/useMediaQuery";
+// import useMediaQuery from "../hooks/useMediaQuery";
 import { motion } from "framer-motion";
 
 const Skills = ({ setSelectedPage }) => {
-    const isAboveLarge = useMediaQuery("(min-width: 1060px)");
+    // const isAboveLarge = useMediaQuery("(min-width: 1060px)");
     const programmingLanguages = ['C/C++', 'Java', 'Python', 'TypeScript'];
     const frameworks = ['React.js', 'Express.js', 'Spring', 'PyTorch'];
     const developerTools = ['Git', 'Vim', 'Bash', '(C-)Make', 'MongoDB', 'Node.js', 'MySQL'];
@@ -30,23 +30,6 @@ const Skills = ({ setSelectedPage }) => {
                         My skills encompass technical proficiency in multiple programming languages and frameworks, experience in advanced problem-solving, and strong soft skills.
                     </p>
                 </motion.div>
-
-                <div className="mt-16 md:mt-0">
-                    {isAboveLarge ? (
-                        <div
-                            className="relative z-0 ml-20 before:absolute before:-top-10 before:-left-10
-                        before:w-full before:h-full before:border-2 before:border-red-500 before:z-[-1]"
-                        >
-                            <img
-                                alt="skills"
-                                className="z-10 saturate-100"
-                                src={require("../assets/skills-image.png")}
-                            />
-                        </div>
-                    ) : (
-                        <img alt="skills" className="z-10" src={require("../assets/skills-image.png")} />
-                    )}
-                </div>
             </div>
 
             {/* SKILLS */}

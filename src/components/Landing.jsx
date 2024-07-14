@@ -10,7 +10,7 @@ const Landing = ({ setSelectedPage }) => {
   return (
     <section
       id="home"
-      className="md:flex md:justify-between md:items-center gap-16 md:h-full py-5"
+      className="flex flex-col md:flex-row my-10 md:justify-between md:items-center gap-16 py-5 h-full"
     >
       {/* IMAGE SECTION */}
       <div className="basis-3/5 z-10 mt-16 md:mt-32 flex justify-center md:order-2">
@@ -18,10 +18,9 @@ const Landing = ({ setSelectedPage }) => {
 
           <img
             alt="profile"
-            className="hover:filter hover:saturate-150 transition duration-500 z-10 w-full max-w-[400px] md:max-w-[600px] rounded-lg"
+            className="hover:filter hover:saturate-150 transition duration-500 z-10 w-full max-w-[400px] md:max-w-[400px] rounded-lg"
             src={require("../assets/profile-image.png")}
           />
-
         ) : (
           <img
             alt="profile"
@@ -67,7 +66,7 @@ const Landing = ({ setSelectedPage }) => {
           </div>
 
           <p className="mt-10 mb-7 text-gray-400 text-center p-5 md:text-start">
-            Currently studying for a bachelor's degree in Computer Science and Engineering at UNIST, South Korea, possessing self-assurance and a strong work ethic.
+            I am a software engineer with Bachelor's degree in Computer Science from <a className="font-bold underline" href="https://unist.ac.kr">UNIST</a> in South Korea.
           </p>
         </motion.div>
 

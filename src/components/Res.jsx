@@ -5,6 +5,11 @@ import Card from "./Card";
 
 const cardList = [
     {
+        name: "Leety",
+        content: "A mobile application that reminds users of solving leetcode problems built with Flutter.",
+        linc: "https://github.com/assylzhanb/leety"
+    },
+    {
         name: "Elastic Network Models",
         content: "A python module for evaluating the performance of Elastic Network Models",
         linc: "https://github.com/almacho04/ENM"

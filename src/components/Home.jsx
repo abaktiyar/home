@@ -52,9 +52,11 @@ const Home = () => {
                 amount="all"
                 onViewportEnter={() => setSelectedPage("home")}
             >
-                <Landing setSelectedPage={setSelectedPage} />
+                <div className="md:h-[90vh]">
+                    <Landing setSelectedPage={setSelectedPage} />
+                </div>
             </motion.div>
-            {/* <LineGradient /> */}
+            <LineGradient />
             <div className='w-5/6 mx-auto md:h-full'></div>
             {/* About ME COMPONENT */}
             <div className="mx-auto h-full ">
@@ -69,7 +71,7 @@ const Home = () => {
             {/* <LineGradient /> */}
 
             {/* SKILLS COMPONENT */}
-            <div className="w-5/6 mx-auto md:h-full ">
+            {/* <div className="w-5/6 mx-auto md:h-full ">
                 <motion.div
                     margin="0 0 -200px 0"
                     amount="all"
@@ -77,9 +79,9 @@ const Home = () => {
                 >
                     <Skills />
                 </motion.div>
-            </div>
+            </div> */}
 
-            <LineGradient />
+            {/* <LineGradient /> */}
             {/* PROJECTS COMPONENT */}
             {/* <div className="w-5/6 mx-auto">
         <motion.div
@@ -92,6 +94,7 @@ const Home = () => {
       </div> */}
             <LineGradient />
             {/* CARDS COMPONENT */}
+            <div className="w-5/6 mx-auto md:h-full py-5"><p className='text-4xl font-bold inline border-red-500 border-b-4'>Projects</p></div>
             <div className="flex justify-center md:h-full">
                 <motion.div
                     margin="0 0 -200px 0"

@@ -1,4 +1,4 @@
-export const CVLink = "https://drive.google.com/file/d/1ErEYzcya_C_jYTo1EjLSEezfMYJuGBDl/view?usp=sharing"
+export const CVLink = "https://drive.google.com/file/d/15x0IeTFESI-UCf4c2Wj-_IoSkou6pyWx/view?usp=sharing"
 
 export const educationList = [
     {
@@ -82,16 +82,21 @@ export const honorsList = [
 ]
 
 export const experienceList = [
-    // {
-    //     position: "Full Stack Developer",
-    //     company: "Onsquare",
-    //     link: "https://o-n2.com/",
-    //     period: "Feb 2024 - Present",
-    //     location: "Seoul, South Korea",
-    //     specifics: [
+    {
+        position: "Full Stack Developer",
+        company: "Onsquare",
+        link: "https://o-n2.com/",
+        period: "Feb 2024 - Present",
+        location: "Seoul, South Korea",
+        specifics: [
+            "Developed an advanced search algorithm utilizing weighted scoring and LRU caching, enhancing user experience by optimizing search efficiency and relevance.",
+            "Enhanced server-side security by implementing a robust type-checker, ensuring secure server calls.",
+            "Implemented differential rendering for canvas elements, improving rendering speed by 30% and enhancing interactive features.",
+            "Reduced API call expenses by 80% with effective caching and service optimizations.",
+            "Implemented web security configuration and user-friendly login system, ensuring data privacy."
 
-    //     ]
-    // },
+        ]
+    },
     {
         position: "Research & Development Intern",
         company: "Center for Soft & Living Matter (IBS)",
@@ -100,7 +105,7 @@ export const experienceList = [
         location: "Ulsan, South Korea",
         specifics: [
             "Developed Python automation scripts, reducing data processing time by 30%.",
-            "Analyzed and processed over \textbf{5,000 data points} from molecular dynamics simulations and experimental crystal structures to evaluate ENM (Elastic Network Model) performance.",
+            "Analyzed and processed over 5,000 data points from molecular dynamics simulations and experimental crystal structures to evaluate ENM (Elastic Network Model) performance.",
             "Conducted covariance matrix comparisons, and Pearson correlation analyses on a dataset of 300 molecular structures, generating valuable insights.",
             "Contributed to the development of a new algorithm for predicting the physical properties of protein movement.",
             "Hosted weekly seminars on protein dynamics and graph theory for the research team."
