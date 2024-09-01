@@ -1,4 +1,4 @@
-export const CVLink = "https://drive.google.com/file/d/15x0IeTFESI-UCf4c2Wj-_IoSkou6pyWx/view?usp=sharing"
+export const CVLink = "https://drive.google.com/file/d/1fiMcsdm7xXBx9_0KLnTYvYQMsnlGfq0u/view?usp=sharing"
 
 export const educationList = [
     {
@@ -89,9 +89,10 @@ export const experienceList = [
         period: "Feb 2024 - Present",
         location: "Seoul, South Korea",
         specifics: [
-            "Developed an advanced search algorithm utilizing weighted scoring and LRU caching, enhancing user experience by optimizing search efficiency and relevance.",
+            "Developed an advanced search algorithm utilizing weighted scoring and LRU caching, enhancing user experience by optimizing search efficiency and results relevance.",
+            "Contributed to the design of a runtime application based on advanced type theory, enabling the creation of custom tools without coding, reducing manual workflows by 40%.",
             "Enhanced server-side security by implementing a robust type-checker, ensuring secure server calls.",
-            "Implemented differential rendering for canvas elements, improving rendering speed by 30% and enhancing interactive features.",
+            "Implemented differential rendering for canvas elements, improving rendering speed by 74% and enhancing interactive features.",
             "Reduced API call expenses by 80% with effective caching and service optimizations.",
             "Implemented web security configuration and user-friendly login system, ensuring data privacy."
 
