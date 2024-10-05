@@ -1,4 +1,4 @@
-export const CVLink = "https://drive.google.com/file/d/1fiMcsdm7xXBx9_0KLnTYvYQMsnlGfq0u/view?usp=sharing"
+export const CVLink = "https://drive.google.com/file/d/1p5-ecqJZC0Vb_5fljqUZMEBB7lusJqtf/view?usp=sharing"
 
 export const educationList = [
     {
@@ -92,10 +92,12 @@ export const experienceList = [
             "Developed an advanced search algorithm utilizing weighted scoring and LRU caching, enhancing user experience by optimizing search efficiency and results relevance.",
             "Contributed to the design of a runtime application based on advanced type theory, enabling the creation of custom tools without coding, reducing manual workflows by 40%.",
             "Enhanced server-side security by implementing a robust type-checker, ensuring secure server calls.",
-            "Implemented differential rendering for canvas elements, improving rendering speed by 74% and enhancing interactive features.",
+            "Implemented differential rendering pipelines for canvas elements, improving rendering speed by 74% and enhancing interactive features.",
             "Reduced API call expenses by 80% with effective caching and service optimizations.",
+            "Led the design and development of a flexible data model, allowing for the intuitive management of complex, nested data within AWS DynamoDB, with a custom serialization strategy that minimized storage overhead.",
+            "Utilized pure TypeScript to optimize client-rendered components, ensuring type safety and enhancing collaboration with the backend through the implementation of a strongly-typed API.",
+            "Built WebSocket infrastructure using Scala for real-time communications, ensuring reliable message delivery.",
             "Implemented web security configuration and user-friendly login system, ensuring data privacy."
-
         ]
     },
     {
@@ -105,10 +107,10 @@ export const experienceList = [
         period: "Sep 2023 - Jan 2024",
         location: "Ulsan, South Korea",
         specifics: [
-            "Developed Python automation scripts, reducing data processing time by 30%.",
-            "Analyzed and processed over 5,000 data points from molecular dynamics simulations and experimental crystal structures to evaluate ENM (Elastic Network Model) performance.",
+            "Developed Python automation scripts using pandas and multiprocessing, reducing processing time by 30%.",
+            "Analyzed and processed over 5,000 data points from molecular dynamics simulations and experimental crystal structures with SciPy to evaluate ENM (Elastic Network Model) performance.",
             "Conducted covariance matrix comparisons, and Pearson correlation analyses on a dataset of 300 molecular structures, generating valuable insights.",
-            "Contributed to the development of a new algorithm for predicting the physical properties of protein movement.",
+            "Conducted statistical analyses on 300 molecular structures, using regression modeling and PCA to uncover insights that enhanced predictive modeling of molecular interactions.",
             "Hosted weekly seminars on protein dynamics and graph theory for the research team."
         ]
     },
@@ -122,6 +124,7 @@ export const experienceList = [
             "Revamped the typing system with a more efficient architecture, resulting in a 60% performance improvement.",
             "Integrated an AI chatbot into the social chatting system, enhancing user interactions and engagement in the project.",
             "Implemented web security configuration and user-friendly login system, ensuring data privacy and seamless user access.",
+            "Developed a browser-based virtual file system that allows users to simulate an organized data structure within their web environment.",
             "Utilized TypeScript and RE:DOM to craft an aesthetically pleasing and responsive UI for an enhanced user experience."
         ]
     },
