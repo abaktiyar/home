@@ -30,7 +30,7 @@ const SocialMediaIcons = () => {
                 className="hover:opacity-50 transition duration-500"
 
 
-                href="https://www.instagram.com/assylzhanbaktiyar"
+                href="https://www.instagram.com/abaktiyar_"
                 target="_blank" rel="noreferrer">
                 <img
                     alt="Instagram"

@@ -52,7 +52,7 @@ const Home = () => {
                 amount="all"
                 onViewportEnter={() => setSelectedPage("home")}
             >
-                <div className="md:h-[90vh]">
+                <div className="md:h-[100vh]">
                     <Landing setSelectedPage={setSelectedPage} />
                 </div>
             </motion.div>

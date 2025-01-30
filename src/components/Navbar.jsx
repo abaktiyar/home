@@ -78,13 +78,13 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
                             isAboveSmallScreen={isAboveSmallScreen}
                             isTopOfPage={isTopOfPage}
                         />
-                        <SmoothLink
+                        {/* <SmoothLink
                             page="Skills"
                             selectedPage={selectedPage}
                             setSelectedPage={setSelectedPage}
                             isAboveSmallScreen={isAboveSmallScreen}
                             isTopOfPage={isTopOfPage}
-                        />
+                        /> */}
                         <SmoothLink
                             page="Projects"
                             selectedPage={selectedPage}
@@ -138,12 +138,19 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
                                         isTopOfPage={isTopOfPage}
                                     />
                                     <SmoothLink
+                                        page="Resume"
+                                        selectedPage={selectedPage}
+                                        setSelectedPage={() => handleLinkClick('resume')}
+                                        isAboveSmallScreen={isAboveSmallScreen}
+                                        isTopOfPage={isTopOfPage}
+                                    />
+                                    {/* <SmoothLink
                                         page="Skills"
                                         selectedPage={selectedPage}
                                         setSelectedPage={() => handleLinkClick('skills')}
                                         isAboveSmallScreen={isAboveSmallScreen}
                                         isTopOfPage={isTopOfPage}
-                                    />
+                                    /> */}
                                     <SmoothLink
                                         page="Projects"
                                         selectedPage={selectedPage}
