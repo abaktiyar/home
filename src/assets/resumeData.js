@@ -1,4 +1,4 @@
-export const CVLink = "https://drive.google.com/file/d/1uyWf49EyZsT_yHqZmS6XRYOLO4igiQuI/view?usp=sharing"
+export const CVLink = "https://drive.google.com/file/d/1OLO584AV9DTVrshZBqKdxGrtIpmBjmP-/view?usp=sharing"
 
 export const educationList = [
     {
@@ -89,14 +89,15 @@ export const experienceList = [
         period: "Feb 2024 - Present",
         location: "Seoul, South Korea",
         specifics: [
-            "Developed an advanced search algorithm utilizing weighted scoring and LRU caching, enhancing user experience by optimizing search efficiency and results relevance.",
-            "Contributed to the design of a runtime application based on advanced type theory, enabling the creation of custom tools without coding, reducing manual workflows by 40%.",
+            "Architected a runtime application based on advanced type theory that enables non-technical users to create custom tools without coding, reducing manual workflows by 40%.",
+            "Developed recommendation algorithms in Scala that increased user task completion rates by 35% through intelligent workflow suggestions.",
             "Enhanced server-side security by implementing a robust type-checker, ensuring secure server calls.",
-            "Implemented differential rendering pipelines for canvas elements, improving rendering speed by 74% and enhancing interactive features.",
-            "Reduced API call expenses by 80% with effective caching and service optimizations.",
-            "Led the design and development of a flexible data model, allowing for the intuitive management of complex, nested data within AWS DynamoDB, with a custom serialization strategy that minimized storage overhead.",
-            "Utilized pure TypeScript to optimize client-rendered components, ensuring type safety and enhancing collaboration with the backend through the implementation of a strongly-typed API.",
-            "Built WebSocket infrastructure using Scala for real-time communications, ensuring reliable message delivery.",
+            "Redesigned client-rendered components using pure TypeScript, ensuring type safety and seamless integration withthe backend through a strongly typed API.",
+            "Implemented in-memory caching strategy reducing API call expenses by 80%.",
+            "Led the development of a flexible data model, allowing for the intuitive management of complex, nested data within AWS DynamoDB, with a custom serialization strategy.",
+            "Optimized the canvas rendering pipeline, increasing speed by 74% and enabling smooth real-time interactions by reducing unnecessary re-renders.",
+            "Built a high-performance WebSocket system in Scala, enabling real-time collaboration with guaranteed message delivery, reduced latency, and race-condition prevention.",
+            "Developed an advanced search algorithm utilizing weighted scoring and LRU caching, enhancing user experience by optimizing search efficiency and results relevance.",
             "Implemented web security configuration and user-friendly login system, ensuring data privacy."
         ]
     },
@@ -107,10 +108,9 @@ export const experienceList = [
         period: "Sep 2023 - Jan 2024",
         location: "Ulsan, South Korea",
         specifics: [
-            "Developed Python automation scripts using pandas and multiprocessing, reducing processing time by 30%.",
-            "Analyzed and processed over 5,000 data points from molecular dynamics simulations and experimental crystal structures with SciPy to evaluate ENM (Elastic Network Model) performance.",
-            "Conducted covariance matrix comparisons, and Pearson correlation analyses on a dataset of 300 molecular structures, generating valuable insights.",
-            "Conducted statistical analyses on 300 molecular structures, using regression modeling and PCA to uncover insights that enhanced predictive modeling of molecular interactions.",
+            "Optimized data processing pipelines using Python multiprocessing and pandas, reducing computation time by 30% for molecular dynamics simulations.",
+            "Processed 5,000+ data points from molecular dynamics simulations, Elastic Network Models (ENMs), and real-world crystal structures using SciPy, performing PCA and covariance analysis to evaluate protein movements, fluctuations, and model accuracy.",
+            "Contributed to the design and development of an advanced algorithm for predicting protein movement properties, improving the accuracy and efficiency of molecular simulations.",
             "Hosted weekly seminars on protein dynamics and graph theory for the research team."
         ]
     },
@@ -121,11 +121,11 @@ export const experienceList = [
         period: "Jun 2023 - Aug 2023",
         location: "Seoul, South Korea",
         specifics: [
-            "Revamped the typing system with a more efficient architecture, resulting in a 60% performance improvement.",
-            "Integrated an AI chatbot into the social chatting system, enhancing user interactions and engagement in the project.",
-            "Implemented web security configuration and user-friendly login system, ensuring data privacy and seamless user access.",
+            // "Revamped the typing system with a more efficient architecture, resulting in a 60% performance improvement.",
+            "Integrated an AI chatbot into the chatting system, enhancing user interactions and engagement in the project.",
+            // "Implemented web security configuration and user-friendly login system, ensuring data privacy and seamless user access.",
             "Developed a browser-based virtual file system that allows users to simulate an organized data structure within their web environment.",
-            "Utilized TypeScript and RE:DOM to craft an aesthetically pleasing and responsive UI for an enhanced user experience."
+            "Utilized TypeScript and RE:DOM to create a responsive and visually appealing UI."
         ]
     },
     {

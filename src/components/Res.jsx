@@ -7,7 +7,7 @@ const cardList = [
     {
         name: "Leety",
         content: "A mobile application that reminds users of solving leetcode problems built with Flutter.",
-        linc: "https://github.com/assylzhanb/leety"
+        linc: "https://github.com/abaktiyar/leety"
     },
     {
         name: "Elastic Network Models",
@@ -18,26 +18,27 @@ const cardList = [
     {
         name: "Course Reviewer",
         content: "A web application that allows students to review courses and professors in UNIST",
-        linc: "https://github.com/assylzhanb/course-reviewer"
+        linc: "https://github.com/abaktiyar/course-reviewer"
     },
     {
         name: "Image Generator",
         content: "A full-stack web application that generates images based on OpenAI's DALL-E model",
-        linc: "https://github.com/assylzhanb/dalle-copy"
+        linc: "https://github.com/abaktiyar/dalle-copy"
     },
     {
         name: 'Portfolio',
         content: 'This webpage based on React.js and Tailwind for styling',
-        linc: 'https://github.com/assylzhanb/portfolio'
+        linc: 'https://github.com/abaktiyar/home'
     },
     {
         name: 'To-do List App',
         content: 'To-do list application using React.js and Bootstrap',
-        linc: 'https://github.com/assylzhanb/todo-list'
+        linc: 'https://github.com/abaktiyar/React_todolist'
     },
     {
         name: 'APIAI Telegram-bot',
-        content: 'Telegram bot with AI extension'
+        content: 'Telegram bot with AI extension',
+        linc: 'https://github.com/abaktiyar/APIAI-Telegram-Bot-NLP'
     },
 ]
 

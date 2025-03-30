@@ -6,7 +6,7 @@ const SocialMediaIcons = () => {
                 className="hover:opacity-50 transition duration-500"
 
 
-                href="https://www.linkedin.com/in/assylzhan-baktiyar-333679198/"
+                href="https://www.linkedin.com/in/abaktiyar/"
                 target="_blank" rel="noreferrer">
                 <img
                     alt="LinkedIn"
@@ -18,7 +18,7 @@ const SocialMediaIcons = () => {
                 className="hover:opacity-50 transition duration-500"
 
 
-                href="https://www.github.com/assylzhanb"
+                href="https://www.github.com/abaktiyar"
                 target="_blank" rel="noreferrer">
                 <img
                     alt="Github"

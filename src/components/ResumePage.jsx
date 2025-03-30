@@ -143,7 +143,7 @@ const ResumeNavbar = ({ isTopOfPage }) => {
                     </a>
                 </div>
                 <div className='flex justify-between gap-16 font-opensans text-sm font-semibold'>
-                    <a href="https://www.github.com/assylzhanb"
+                    <a href="https://www.github.com/abaktiyar"
                         target="_blank"
                         rel="noopener noreferrer"
                         className={`relative inline-block cursor-pointer transition duration-500 ${defaultSize} group `}
