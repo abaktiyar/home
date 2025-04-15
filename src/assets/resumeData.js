@@ -1,4 +1,4 @@
-export const CVLink = "https://drive.google.com/file/d/1A60_Pq3nPbPTOOQ_4deC71EeKlwKsekP/view?usp=sharing"
+export const CVLink = "https://drive.google.com/file/d/1yq-VC2NdWBlU0Ok9eczOpW5tAwFMZHCH/view?usp=sharing"
 
 export const educationList = [
     {
@@ -96,7 +96,7 @@ export const experienceList = [
             "Implemented in-memory caching strategy reducing API call expenses by 80%.",
             "Led the development of a flexible data model, allowing for the intuitive management of complex, nested data within AWS DynamoDB, with a custom serialization strategy.",
             "Optimized the canvas rendering pipeline, increasing speed by 74% and enabling smooth real-time interactions by reducing unnecessary re-renders.",
-            "Built a WebSocket batch processor to aggregate frequent user actions, reducing server load and cutting round-trip latency in real-time systems.",
+            "Built a WebSocket batch processor to aggregate frequent user actions, reducing server load and cutting round-trip latency in a real-time collaborative editor.",
             "Developed an advanced search algorithm utilizing weighted scoring and LRU caching, enhancing user experience by optimizing search efficiency and results relevance.",
             "Implemented web security configuration and user-friendly login system, ensuring data privacy."
         ]
