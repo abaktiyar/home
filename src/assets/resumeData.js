@@ -1,4 +1,4 @@
-export const CVLink = "https://drive.google.com/file/d/1yq-VC2NdWBlU0Ok9eczOpW5tAwFMZHCH/view?usp=sharing"
+export const CVLink = "https://drive.google.com/file/d/1Oi3BNtnb4ciVlt5qoypZiw6bKme34BUN/view?usp=sharing"
 
 export const educationList = [
     {
