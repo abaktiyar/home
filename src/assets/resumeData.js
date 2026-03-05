@@ -1,4 +1,4 @@
-export const CVLink = "https://drive.google.com/file/d/1Oi3BNtnb4ciVlt5qoypZiw6bKme34BUN/view?usp=sharing"
+export const CVLink = "https://drive.google.com/drive/folders/1QpeGCmvBK6isaRbg_bXYnJk6-grW39bU?usp=sharing"
 
 export const educationList = [
     {
@@ -89,16 +89,13 @@ export const experienceList = [
         period: "Feb 2024 - Present",
         location: "Seoul, South Korea",
         specifics: [
-            "Architected a runtime application based on advanced type theory that enables non-technical users to create custom tools without coding, reducing manual workflows by 40%.",
-            "Developed recommendation algorithms in Scala that increased user task completion rates by 35% through intelligent workflow suggestions.",
-            "Enhanced server-side security by implementing a robust type-checker, ensuring secure server calls.",
-            "Redesigned client-rendered components using pure TypeScript, ensuring type safety and seamless integration withthe backend through a strongly typed API.",
-            "Implemented in-memory caching strategy reducing API call expenses by 80%.",
-            "Led the development of a flexible data model, allowing for the intuitive management of complex, nested data within AWS DynamoDB, with a custom serialization strategy.",
-            "Optimized the canvas rendering pipeline, increasing speed by 74% and enabling smooth real-time interactions by reducing unnecessary re-renders.",
+            "Architected scalable DynamoDB schemas and a robust Java-based serialization utility, ensuring type-safety across complex nested data models.",
+            "Scaled core infrastructure for a 30M+ user application, reducing API overhead by 80% through a high-efficiency in-memory caching strategy.",
             "Built a WebSocket batch processor to aggregate frequent user actions, reducing server load and cutting round-trip latency in a real-time collaborative editor.",
-            "Developed an advanced search algorithm utilizing weighted scoring and LRU caching, enhancing user experience by optimizing search efficiency and results relevance.",
-            "Implemented web security configuration and user-friendly login system, ensuring data privacy."
+            "Optimized the canvas rendering pipeline, improving rendering speed by 74% and ensuring smoother real-time user interactions.",
+            "Developed a visual, no-code runtime system for reusable custom tools, reducing repetitive manual setup.",
+            "Enhanced server-side security by implementing a robust type-checker, ensuring secure server calls.",
+            "Designed recommendation algorithms using Scala that increased user task completion rates by 35% through intelligent workflow suggestions."
         ]
     },
     {

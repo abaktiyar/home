@@ -26,7 +26,7 @@ const Landing = ({ setSelectedPage }) => {
           animation: shadowPulse 3s infinite;
         }
       `}</style>
-      <div className='flex flex-col md:flex-row md:justify-between md:items-center gap-16 border-2 basis-4/5 my-32 mx-10 border-black p-5 rounded-3xl shadow-lg animate-shadowPulse'>
+      <div className='flex flex-col md:flex-row md:justify-between md:items-center border-2 basis-4/5 my-32 mx-10 border-black p-5 rounded-3xl shadow-lg animate-shadowPulse'>
         {/* IMAGE SECTION */}
         <div className="basis-3/5 z-10 flex justify-center md:order-2">
           {isAboveLarge ? (
@@ -80,7 +80,7 @@ const Landing = ({ setSelectedPage }) => {
               />
             </div>
 
-            <p className="mt-10 mb-7 text-gray-400 text-center p-5 md:text-start">
+            <p className="mt-5x mb-5 text-gray-400 text-center p-5 md:text-start">
               I am a software engineer with Bachelor's degree in Computer Science from <a className="font-bold underline" href="https://unist.ac.kr">UNIST</a> in South Korea.
             </p>
           </motion.div>
