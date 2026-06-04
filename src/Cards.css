@@ -6,10 +6,24 @@
 
 .carrosel-geral {
   position: relative;
-  width: 23rem;
-  height: 23rem;
+  width: 18rem;
+  height: 18rem;
   perspective: 500px;
   transform-style: preserve-3d;
+}
+
+@media (min-width: 480px) {
+  .carrosel-geral {
+    width: 22rem;
+    height: 22rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .carrosel-geral {
+    width: 26rem;
+    height: 26rem;
+  }
 }
 
 .conteudo-geral {
@@ -30,7 +44,7 @@
   padding: 2rem;
   background-color: hsl(10deg, 40%, calc(100% - var(--abs-compensacao) * 50%));
   border-radius: 1rem;
-  color: #9ca3af;
+  color: rgba(255, 255, 255, 0.9);
   text-align: justify;
   transition: all 0.3s ease-out;
 }
@@ -40,7 +54,7 @@
   cursor: pointer;
 }
 
-/* .conteudo-geral:nth-child(1) .cartao {
+.conteudo-geral:nth-child(1) .cartao {
   background: linear-gradient(-229deg, #0093e9, #80d0c7);
 }
 
@@ -61,14 +75,19 @@
 
 .conteudo-geral:nth-child(6) .cartao {
   background: linear-gradient(-229deg, #d9afd9, #97d9e1);
-} */
+}
+
+.conteudo-geral:nth-child(7) .cartao {
+  background: linear-gradient(-229deg, #f7971e, #ffd200);
+}
 
 .cartao h2 {
   text-align: center;
   font-size: 2rem;
   font-weight: bold;
   margin: 0 0 0.7em;
-  color: #1f2937;
+  color: #ffffff;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
 }
 .cartao p,
 .cartao h2 {

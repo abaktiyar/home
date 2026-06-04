@@ -93,7 +93,7 @@ const ResumePage = () => {
         }
         window.addEventListener("scroll", handleScroll)
         return () => window.removeEventListener("scroll", handleScroll)
-    })
+    }, [])
 
     return (
         <div className="flex flex-col">

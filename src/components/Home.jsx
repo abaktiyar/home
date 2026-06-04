@@ -5,11 +5,12 @@ import Navbar from './Navbar'
 import DotGroup from './DotGroup'
 import Landing from './Landing'
 import LineGradient from './LineGradient'
-// import Skills from './Skills'
+import Skills from './Skills'
 import Contact from './Contact'
 import Footer from './Footer'
 import Res from './Res'
 import AboutMe from './AboutMe'
+import BackToTop from './BackToTop'
 
 
 
@@ -68,30 +69,17 @@ const Home = () => {
                     <AboutMe setSelectedPage={setSelectedPage} />
                 </motion.div>
             </div>
-            {/* <LineGradient /> */}
+            <LineGradient />
 
             {/* SKILLS COMPONENT */}
-            {/* <div className="w-5/6 mx-auto md:h-full ">
-                <motion.div
-                    margin="0 0 -200px 0"
-                    amount="all"
-                    onViewportEnter={() => setSelectedPage("skills")}
-                >
-                    <Skills />
-                </motion.div>
-            </div> */}
+            <motion.div
+                margin="0 0 -200px 0"
+                amount="all"
+                onViewportEnter={() => setSelectedPage("skills")}
+            >
+                <Skills />
+            </motion.div>
 
-            {/* <LineGradient /> */}
-            {/* PROJECTS COMPONENT */}
-            {/* <div className="w-5/6 mx-auto">
-        <motion.div
-          margin="0 0 -200px 0"
-          amount="all"
-          onViewportEnter={() => setSelectedPage("projects")}
-        >
-          <Projects />
-        </motion.div>
-      </div> */}
             <LineGradient />
             {/* CARDS COMPONENT */}
             <div className="w-5/6 mx-auto md:h-full py-5"><p className='text-4xl font-bold inline border-red-500 border-b-4'>Projects</p></div>
@@ -117,6 +105,7 @@ const Home = () => {
                 </motion.div>
             </div>
             <Footer />
+            <BackToTop />
         </div>
     );
 }

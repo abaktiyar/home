@@ -6,29 +6,28 @@ import { Link } from 'react-router-dom'
 
 
 const SmoothLink = ({ page, selectedPage, setSelectedPage, isAboveSmallScreen, isTopOfPage }) => {
-    const defaultSize = isAboveSmallScreen ? 'text-lg' : 'text-2xl hover:text-yellow'
+    const defaultSize = isAboveSmallScreen ? 'text-base' : 'text-2xl hover:text-yellow'
     const lowerCasePage = page.toLowerCase()
     if (lowerCasePage === "resume") return (
-        <Link to="/resume" className={`relative inline-block cursor-pointer ${selectedPage === lowerCasePage ? 'text-yellow' : ''}
+        <Link to="/resume" className={`relative inline-block cursor-pointer ${selectedPage === lowerCasePage ? 'text-red-500' : ''}
         transition duration-500 ${defaultSize} group`}>
             <div className="max-w-md">
                 {page}
-                {isAboveSmallScreen && <span className={`absolute bottom-0 left-0 inline-block w-full h-0.5 ${isTopOfPage ? "bg-black" : "bg-white"} transform scale-x-0 origin-left transition-transform duration-300 group-hover:scale-x-100`}></span>}
+                {isAboveSmallScreen && <span className={`absolute bottom-0 left-0 inline-block w-full h-0.5 bg-gray-800 transform scale-x-0 origin-left transition-transform duration-300 group-hover:scale-x-100`}></span>}
             </div>
         </Link>
     )
-    // const defaultColor = (isAboveSmallScreen && !isTopOfPage) ? 'text-white' : 'text-black '
 
     return (
         <AnchorLink
-            className={`relative inline-block cursor-pointer ${selectedPage === lowerCasePage ? 'text-yellow' : ''} 
+            className={`relative inline-block cursor-pointer ${selectedPage === lowerCasePage ? 'text-red-500' : ''}
             transition duration-500 ${defaultSize} group`}
             href={`#${lowerCasePage}`}
             onClick={() => setSelectedPage(lowerCasePage)}
         >
             <div className="max-w-md">
                 {page}
-                {isAboveSmallScreen && <span className={`absolute bottom-0 left-0 inline-block w-full h-0.5 ${isTopOfPage ? "bg-black" : "bg-white"} transform scale-x-0 origin-left transition-transform duration-300 group-hover:scale-x-100`}></span>}
+                {isAboveSmallScreen && <span className={`absolute bottom-0 left-0 inline-block w-full h-0.5 bg-gray-800 transform scale-x-0 origin-left transition-transform duration-300 group-hover:scale-x-100`}></span>}
             </div>
         </AnchorLink>
     )
@@ -40,23 +39,28 @@ const SmoothLink = ({ page, selectedPage, setSelectedPage, isAboveSmallScreen, i
 const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
     const [isMenuToggled, setIsMenuToggled] = useState(false)
     const isAboveSmallScreen = useMediaQuery('(min-width: 768px)')
-    const navbarBackground = isTopOfPage ? 'shadow-none' : 'bg-black shadow-lg text-white'
+    const navbarBackground = isTopOfPage ? 'shadow-none' : 'bg-white/95 md:bg-white/90 md:backdrop-blur-md shadow-sm border-b border-gray-100'
     const handleLinkClick = (page) => {
         setSelectedPage(page)
         setIsMenuToggled(false)
     }
+
+    const handleKeyDown = (e) => {
+        if (e.key === 'Escape') setIsMenuToggled(false)
+    }
+
     return (
-        <nav className={`${navbarBackground} transition-all duration-200 z-40 w-full fixed top-0 py-6`}>
-            <div className="flex items-center justify-between mx-auto px-16">
+        <nav className={`${navbarBackground} transition-[background-color,box-shadow,border-color] duration-200 z-40 w-full fixed top-0 py-3 md:py-6`} onKeyDown={handleKeyDown}>
+            <div className="flex items-center justify-between mx-auto px-4 md:px-16">
                 <h4
-                    className="font-playfair text-3xl font-bold"
+                    className="font-playfair text-lg md:text-3xl font-bold flex-1 min-w-0 truncate mr-4 cursor-pointer"
                     onClick={() => setSelectedPage('home')}
                 >
                     Baktiyar Assylzhan
                 </h4>
                 {/* Navbar for Desktop */}
                 {isAboveSmallScreen ? (
-                    <div className="flex jutify-between gap-16 font-opensans text-sm font-semibold">
+                    <div className="flex justify-between gap-16 font-opensans text-sm font-semibold">
                         <SmoothLink
                             page="Home"
                             selectedPage={selectedPage}
@@ -78,13 +82,13 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
                             isAboveSmallScreen={isAboveSmallScreen}
                             isTopOfPage={isTopOfPage}
                         />
-                        {/* <SmoothLink
+                        <SmoothLink
                             page="Skills"
                             selectedPage={selectedPage}
                             setSelectedPage={setSelectedPage}
                             isAboveSmallScreen={isAboveSmallScreen}
                             isTopOfPage={isTopOfPage}
-                        /> */}
+                        />
                         <SmoothLink
                             page="Projects"
                             selectedPage={selectedPage}
@@ -101,13 +105,15 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
                         />
                     </div>
                 ) : (
-                    <div>
+                    <div className="shrink-0">
                         <button
-                            className='rounded-full bg-red p-2'
+                            className='rounded-full bg-red-500 p-2'
                             onClick={() => setIsMenuToggled(!isMenuToggled)}
+                            aria-label="Open navigation menu"
+                            aria-expanded={isMenuToggled}
                         >
-                            <img alt="menu-open-icon"
-                                className={`${isTopOfPage ? 'brightness-0' : 'brightness-100'}`}
+                            <img alt=""
+                                className="brightness-0"
                                 src={require("../assets/menu-icon.svg").default} />
                         </button>
 
@@ -144,13 +150,13 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
                                         isAboveSmallScreen={isAboveSmallScreen}
                                         isTopOfPage={isTopOfPage}
                                     />
-                                    {/* <SmoothLink
+                                    <SmoothLink
                                         page="Skills"
                                         selectedPage={selectedPage}
                                         setSelectedPage={() => handleLinkClick('skills')}
                                         isAboveSmallScreen={isAboveSmallScreen}
                                         isTopOfPage={isTopOfPage}
-                                    /> */}
+                                    />
                                     <SmoothLink
                                         page="Projects"
                                         selectedPage={selectedPage}
@@ -168,12 +174,11 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
 
                                 </div>
                                 <button
-                                    className='absolute right-16 top-10 rounded-full bg-red p-2'
+                                    className='absolute right-16 top-10 rounded-full bg-red-500 p-2'
                                     onClick={() => setIsMenuToggled(!isMenuToggled)}
+                                    aria-label="Close navigation menu"
                                 >
-                                    <img alt="menu-close-icon"
-
-                                        src={require("../assets/close-icon.svg").default} />
+                                    <img alt="" src={require("../assets/close-icon.svg").default} />
                                 </button>
 
 

@@ -10,30 +10,16 @@ const Landing = ({ setSelectedPage }) => {
   return (
     <section
       id="home"
-      className="flex  align-middle justify-center gap-16 py-5 h-full"
+      className="flex align-middle justify-center gap-16 py-5 h-full bg-gradient-to-br from-gray-50 to-white"
     >
-      <style jsx>{`
-        @keyframes shadowPulse {
-          0%, 100% {
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2), 0 0 0 rgba(239, 68, 68, 0.4);
-          }
-          50% {
-            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3), 0 0 20px rgba(239, 68, 68, 0.4);
-          }
-        }
-
-        .animate-shadowPulse {
-          animation: shadowPulse 3s infinite;
-        }
-      `}</style>
-      <div className='flex flex-col md:flex-row md:justify-between md:items-center border-2 basis-4/5 my-32 mx-10 border-black p-5 rounded-3xl shadow-lg animate-shadowPulse'>
+      <div className='flex flex-col md:flex-row md:justify-between md:items-center basis-4/5 my-32 mx-10 p-5 rounded-3xl'>
         {/* IMAGE SECTION */}
         <div className="basis-3/5 z-10 flex justify-center md:order-2">
           {isAboveLarge ? (
 
             <img
               alt="profile"
-              className="hover:filter hover:saturate-150 transition duration-500 z-10 w-full max-w-[300px] md:max-w-[300px] rounded-lg"
+              className="hover:saturate-150 hover:scale-105 transition duration-500 z-10 w-full max-w-[300px] md:max-w-[300px] rounded-xl shadow-md hover:shadow-xl"
               src={require("../assets/profile-image.png")}
             />
           ) : (
@@ -80,7 +66,7 @@ const Landing = ({ setSelectedPage }) => {
               />
             </div>
 
-            <p className="mt-5x mb-5 text-gray-400 text-center p-5 md:text-start">
+            <p className="mt-5 mb-5 text-gray-400 text-center p-5 md:text-start">
               I am a software engineer with Bachelor's degree in Computer Science from <a className="font-bold underline" href="https://unist.ac.kr">UNIST</a> in South Korea.
             </p>
           </motion.div>
@@ -103,7 +89,7 @@ const Landing = ({ setSelectedPage }) => {
               onClick={() => setSelectedPage("contact")}
               href="#contact"
             >
-              <div className="bg-gray-200 hover:text-red-500 rounded-lg transition duration-500 w-full h-full flex items-center justify-center px-10 font-semibold">
+              <div className="border-2 border-gray-800 hover:bg-gray-800 hover:text-white rounded-lg transition duration-300 w-full h-full flex items-center justify-center px-10 font-semibold">
                 Contact Me
               </div>
             </AnchorLink>

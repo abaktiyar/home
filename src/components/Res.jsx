@@ -109,6 +109,3 @@ const Res = () => (
 );
 
 export default Res;
-
-// Res component is not working, why?
-// A: Because I have not imported it in App.jsx

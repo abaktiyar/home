@@ -118,9 +118,7 @@ export const experienceList = [
         period: "Jun 2023 - Aug 2023",
         location: "Seoul, South Korea",
         specifics: [
-            // "Revamped the typing system with a more efficient architecture, resulting in a 60% performance improvement.",
             "Integrated an AI chatbot into the chatting system, enhancing user interactions and engagement in the project.",
-            // "Implemented web security configuration and user-friendly login system, ensuring data privacy and seamless user access.",
             "Developed a browser-based virtual file system that allows users to simulate an organized data structure within their web environment.",
             "Utilized TypeScript and RE:DOM to create a responsive and visually appealing UI."
         ]
