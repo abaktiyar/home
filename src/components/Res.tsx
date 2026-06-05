@@ -1,4 +1,5 @@
 import React, { useState, Children } from "react";
+import { motion } from "framer-motion";
 import { TiChevronLeftOutline, TiChevronRightOutline } from "react-icons/ti";
 import "../Cards.css";
 import Card from "./Card";
@@ -103,19 +104,28 @@ const Carrosel = ({ children }: CarouselProps) => {
 };
 
 const Res = () => (
-    <section id="projects">
-        <div className="app pt-48 pb-48 ">
-            <Carrosel>
-                {cardList.map((card, i) => (
-                    <Card
-                        key={i}
-                        linc={card.linc}
-                        title={card.name}
-                        content={card.content}
-                    />
-                ))}
-            </Carrosel>
+    <section id="projects" className="min-h-screen bg-white flex flex-col items-center justify-center py-24">
+        <div className="w-5/6 mx-auto mb-16">
+            <motion.div
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true, amount: 0.3 }}
+                transition={{ duration: 0.5 }}
+                variants={{ hidden: { opacity: 0, x: -50 }, visible: { opacity: 1, x: 0 } }}
+            >
+                <p className="text-4xl font-bold inline border-b-4 border-red-500">Projects</p>
+            </motion.div>
         </div>
+        <Carrosel>
+            {cardList.map((card, i) => (
+                <Card
+                    key={i}
+                    linc={card.linc}
+                    title={card.name}
+                    content={card.content}
+                />
+            ))}
+        </Carrosel>
     </section>
 );
 

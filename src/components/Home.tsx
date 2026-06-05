@@ -78,17 +78,12 @@ const Home = () => {
 
             <LineGradient />
 
-            <div className="w-5/6 mx-auto md:h-full py-5">
-                <p className='text-4xl font-bold inline border-red-500 border-b-4'>Projects</p>
-            </div>
-            <div className="flex justify-center md:h-full">
-                <motion.div
-                    viewport={{ margin: "0px 0px -200px 0px", amount: "all" }}
-                    onViewportEnter={() => setSelectedPage("projects")}
-                >
-                    <Res />
-                </motion.div>
-            </div>
+            <motion.div
+                viewport={{ margin: "0px 0px -200px 0px", amount: "all" }}
+                onViewportEnter={() => setSelectedPage("projects")}
+            >
+                <Res />
+            </motion.div>
 
             <div className="w-full mx-auto md:h-full bg-black">
                 <motion.div

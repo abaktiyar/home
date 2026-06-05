@@ -16,7 +16,7 @@ const Landing = ({ setSelectedPage }: LandingProps) => {
             id="home"
             className="flex align-middle justify-center gap-16 py-5 h-full bg-gradient-to-br from-gray-50 to-white"
         >
-            <div className='flex flex-col md:flex-row md:justify-between md:items-center basis-4/5 my-32 mx-10 p-5 rounded-3xl'>
+            <div className='flex flex-col md:flex-row md:justify-between md:items-center basis-4/5 my-8 md:my-32 mx-10 p-5 rounded-3xl'>
                 <div className="basis-3/5 z-10 flex justify-center md:order-2">
                     {isAboveLarge ? (
                         <img
@@ -27,7 +27,7 @@ const Landing = ({ setSelectedPage }: LandingProps) => {
                     ) : (
                         <img
                             alt="profile"
-                            className="z-10 mt-10 w-full max-w-[300px] md:max-w-[500px] rounded-lg"
+                            className="z-10 w-full max-w-[300px] md:max-w-[500px] rounded-lg"
                             src={require("../assets/profile-image.png")}
                         />
                     )}

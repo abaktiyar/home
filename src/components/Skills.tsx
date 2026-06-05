@@ -53,8 +53,8 @@ const SkillBadge = ({ name, icon: Icon, color }: SkillItem) => (
 );
 
 const Skills = () => (
-    <section id="skills" className="py-24 bg-gray-50">
-        <div className="w-5/6 mx-auto">
+    <section id="skills" className="min-h-screen bg-gray-50 flex items-center">
+        <div className="w-5/6 mx-auto py-24">
             <motion.div
                 initial="hidden"
                 whileInView="visible"
