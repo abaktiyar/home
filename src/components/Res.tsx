@@ -19,6 +19,11 @@ interface CarouselCardStyle extends React.CSSProperties {
 
 const cardList: CardData[] = [
     {
+        name: "Multi-Ticker Exchange Simulator",
+        content: "A C++17 TCP order-book server/client (Boost.Asio, CMake) with a price-time priority matching engine that matches incoming orders against the resting book.",
+        linc: "https://github.com/abaktiyar/market"
+    },
+    {
         name: "Leety",
         content: "A mobile application that reminds users of solving leetcode problems built with Flutter.",
         linc: "https://github.com/abaktiyar/leety"
@@ -56,6 +61,17 @@ const cardList: CardData[] = [
 ]
 
 const VISIBLE_CARDS = 3;
+
+const cardColors = [
+    '#2c7be5', // blue
+    '#38b2ac', // teal
+    '#d6336c', // pink
+    '#4c9f70', // green
+    '#7048e8', // purple
+    '#9c36b5', // magenta
+    '#f76707', // orange
+    '#1098ad', // cyan
+];
 
 interface CarouselProps {
     children: React.ReactNode;
@@ -123,6 +139,7 @@ const Res = () => (
                     linc={card.linc}
                     title={card.name}
                     content={card.content}
+                    color={cardColors[i % cardColors.length]}
                 />
             ))}
         </Carrosel>

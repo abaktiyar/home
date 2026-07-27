@@ -2,11 +2,13 @@ interface CardProps {
     title: string;
     content: string;
     linc: string;
+    color: string;
 }
 
-const Card = ({ title, content, linc }: CardProps) => (
+const Card = ({ title, content, linc, color }: CardProps) => (
     <div
         className="cartao border-gray-200 border-2 flex flex-col justify-between cursor-pointer"
+        style={{ backgroundColor: color }}
         role="button"
         tabIndex={0}
         aria-label={`View ${title} on GitHub`}

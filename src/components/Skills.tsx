@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import { IconType } from 'react-icons';
-import { FaReact, FaPython, FaJava, FaAws, FaDocker, FaGitAlt } from 'react-icons/fa';
-import { SiJavascript, SiTypescript, SiFlutter, SiScala, SiAmazondynamodb, SiPostgresql, SiSpring } from 'react-icons/si';
+import { FaReact, FaPython, FaJava, FaAws, FaDocker, FaGitAlt, FaLinux } from 'react-icons/fa';
+import { SiJavascript, SiTypescript, SiFlutter, SiScala, SiAmazondynamodb, SiPostgresql, SiSpring, SiCplusplus, SiBoost } from 'react-icons/si';
 
 interface SkillItem {
     name: string;
@@ -20,6 +20,7 @@ const skillGroups: SkillGroup[] = [
         items: [
             { name: 'JavaScript', icon: SiJavascript, color: '#F7DF1E' },
             { name: 'TypeScript', icon: SiTypescript, color: '#3178C6' },
+            { name: 'C++', icon: SiCplusplus, color: '#00599C' },
             { name: 'Python', icon: FaPython, color: '#3776AB' },
             { name: 'Java', icon: FaJava, color: '#ED8B00' },
             { name: 'Scala', icon: SiScala, color: '#DC322F' },
@@ -29,6 +30,7 @@ const skillGroups: SkillGroup[] = [
         category: 'Frameworks & Libraries',
         items: [
             { name: 'React', icon: FaReact, color: '#61DAFB' },
+            { name: 'Boost.Asio', icon: SiBoost, color: '#F7901E' },
             { name: 'Spring Boot', icon: SiSpring, color: '#6DB33F' },
             { name: 'Flutter', icon: SiFlutter, color: '#02569B' },
         ],
@@ -38,7 +40,7 @@ const skillGroups: SkillGroup[] = [
         items: [
             { name: 'AWS', icon: FaAws, color: '#FF9900' },
             { name: 'Docker', icon: FaDocker, color: '#2496ED' },
-            { name: 'Git', icon: FaGitAlt, color: '#F05032' },
+            { name: 'Linux', icon: FaLinux, color: '#FCC624' },
             { name: 'DynamoDB', icon: SiAmazondynamodb, color: '#4053D6' },
             { name: 'PostgreSQL', icon: SiPostgresql, color: '#4169E1' },
         ],
