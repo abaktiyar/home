@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import { IconType } from 'react-icons';
-import { FaReact, FaPython, FaJava, FaAws, FaDocker, FaGitAlt, FaLinux } from 'react-icons/fa';
+import { FaReact, FaPython, FaJava, FaAws, FaDocker, FaLinux } from 'react-icons/fa';
 import { SiJavascript, SiTypescript, SiFlutter, SiScala, SiAmazondynamodb, SiPostgresql, SiSpring, SiCplusplus, SiBoost } from 'react-icons/si';
 
 interface SkillItem {
