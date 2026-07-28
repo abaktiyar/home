@@ -114,7 +114,7 @@ export const experienceList: ExperienceItem[] = [
             "Architected scalable DynamoDB schemas and a robust Java-based serialization utility, ensuring type-safety across complex nested data models.",
             "Scaled core infrastructure for a 30M+ user application, reducing API overhead by 80% through a high-efficiency in-memory caching strategy.",
             "Built a WebSocket batch processor to aggregate frequent user actions, reducing server load and cutting round-trip latency in a real-time collaborative editor.",
-            "Optimized the canvas rendering pipeline, improving rendering speed by 74% and ensuring smoother real-time user interactions.",
+            "Optimized the waveform rendering pipeline with a C++/WebAssembly SIMD compute kernel, improving render speed by 50% and removing UI stalls on large files.",
             "Developed a visual, no-code runtime system for reusable custom tools, reducing repetitive manual setup.",
             "Enhanced server-side security by implementing a robust type-checker, ensuring secure server calls.",
             "Designed recommendation algorithms using Scala that increased user task completion rates by 35% through intelligent workflow suggestions."
